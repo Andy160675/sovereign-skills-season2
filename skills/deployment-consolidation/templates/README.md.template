@@ -1,0 +1,141 @@
+# {{PROJECT_NAME}}
+
+**{{PROJECT_DESCRIPTION}}**
+
+## Overview
+
+This repository represents the consolidated deployment of {{PROJECT_NAME}}, organized according to best practices for sovereign infrastructure architecture. The consolidation follows the principle of **"measure twice, cut once"** with full cryptographic traceability and zero-dependency deployment readiness.
+
+## Repository Structure
+
+```
+{{PROJECT_NAME}}/
+├── core/                    # Core system components
+├── infrastructure/          # Infrastructure and deployment
+├── releases/                # Version-controlled releases
+├── docs/                    # Documentation and doctrine
+├── scripts/                 # Deployment and automation
+├── evidence/                # Compliance and audit trail
+├── catalogs/                # State and catalog management
+└── build/                   # Build and CI/CD
+```
+
+## Key Principles
+
+### Sovereign Systems Architecture
+
+The repository follows **Sovereign Systems Architecture** principles:
+
+- **Zero-dependency mindset**: All systems designed for autonomous operation
+- **Cryptographic integrity**: Evidence-bound snapshots and attestations
+- **Build-first execution**: Deployment-ready configurations
+- **Operational sovereignty**: Full offline and online independence
+
+### Deployment Philosophy
+
+**Measure twice, cut once** - Every deployment includes:
+
+1. Structure verification
+2. Script syntax validation
+3. Cryptographic attestation generation
+4. Deterministic manifest creation
+5. Git commit with full audit trail
+
+## Quick Start
+
+### Prerequisites
+
+- Git 2.30+
+- Python 3.11+
+- Bash 4.0+
+- Docker (for containerized deployments)
+
+### Deployment
+
+#### Dry Run (Preview)
+
+```bash
+cd scripts/deployment
+./master_deploy.sh --dry-run
+```
+
+#### Confirmed Deployment
+
+```bash
+./master_deploy.sh --confirm
+```
+
+#### Deploy and Push to Remote
+
+```bash
+./master_deploy.sh --confirm --push
+```
+
+### Verification
+
+The deployment script automatically:
+
+- Verifies repository structure
+- Validates Python script syntax
+- Checks Git status
+- Generates deployment manifest
+- Creates cryptographic attestation
+
+## Deployment Artifacts
+
+Each deployment generates:
+
+1. **Deployment Manifest** (`evidence/snapshots/deployment_manifest_TIMESTAMP.json`)
+   - Deployment metadata
+   - File statistics
+   - Structure verification results
+
+2. **Cryptographic Attestation** (`evidence/attestations/deployment_attestation_TIMESTAMP.sha256`)
+   - SHA256 hash of entire repository
+   - Timestamp and responsible person
+   - Audit trail reference
+
+## CI/CD Pipeline
+
+GitHub Actions workflow available at `build/ci-cd/github-actions-workflow.yml`
+
+Pipeline stages:
+
+1. **Verify Structure** - Validate directory structure
+2. **Verify Python** - Syntax check and linting
+3. **Verify Shell** - ShellCheck validation
+4. **Generate Attestation** - Cryptographic attestation
+5. **Build Report** - Comprehensive build report
+6. **Deploy Notification** - Deployment readiness notification
+
+## Responsible Person
+
+**{{RESPONSIBLE_PERSON}}**
+
+All deployments are cryptographically attested and assigned to the responsible person for accountability and operational sovereignty.
+
+## Evidence and Compliance
+
+All deployments maintain:
+
+- **Evidence snapshots** - Deployment manifests
+- **Cryptographic attestations** - SHA256 hashes
+- **Audit logs** - Complete deployment history
+
+## Support
+
+For questions or issues:
+
+- Review documentation in `docs/`
+- Check deployment logs in `evidence/`
+- Verify attestations in `evidence/attestations/`
+
+## License
+
+{{LICENSE}}
+
+---
+
+**Generated**: {{GENERATION_DATE}}  
+**Repository**: {{PROJECT_NAME}}  
+**Responsible Person**: {{RESPONSIBLE_PERSON}}

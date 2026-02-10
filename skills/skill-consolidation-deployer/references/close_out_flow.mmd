@@ -1,0 +1,17 @@
+graph TD
+    A[Catalog Skills] --> B[Categorize into Lifecycle Groups]
+    B --> C[Assign to Seasons]
+    C --> D[Generate Consolidation Map]
+    D --> E[Build Web Portal]
+    E --> F[Deploy to Git]
+    F --> G{All Seasons Pushed?}
+    G -->|No| F
+    G -->|Yes| H[Generate SITREP + SWOT]
+    H --> I[Hash All Artifacts]
+    I --> J[Create Evidence Trail]
+    J --> K[Sync to Google Drive]
+    K --> L[Apply Constitutional Seal]
+    L --> M[SEALED]
+
+    style A fill:#1a1a2e,stroke:#00e5ff,color:#e0e0e0
+    style M fill:#1a1a2e,stroke:#00e5ff,color:#00e5ff,stroke-width:3px
